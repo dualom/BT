@@ -13,6 +13,7 @@ public class Breakthrough extends JFrame{
    public Breakthrough(){
          add(new JPanelz());
          pack();
+         setDefaultCloseOperation(EXIT_ON_CLOSE);
          setVisible(true);
    }
    class JButtonz extends JButton{
@@ -26,8 +27,18 @@ public class Breakthrough extends JFrame{
             for (int j = 0; j < 8;j++){
                butts[i][j] = new JButtonz();
                add(butts[i][j]);
+               butts[i][j].addActionListener(new ActionListener(){
+                  final int i = 0;
+                  final int j = 0;
+                  public void actionPerformed(ActionEvent ae){
+                  
+                     System.out.println(String.indexOf(butts[i][j]));
+                  }
+               });
             }//end j for loop
+            
          }//end i for loop
+         
      }//end JPanelz Constructor
    }//end JPanelz
    public static void main(String[]args){
