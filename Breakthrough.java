@@ -7,7 +7,9 @@ import java.util.*;
 chris is stupid
 */
 public class Breakthrough extends JFrame{
+
  static JButton [][] butts = new JButton[8][8];
+ 
    public Breakthrough(){
          add(new JPanelz());
          pack();
@@ -20,12 +22,12 @@ public class Breakthrough extends JFrame{
    class JPanelz extends JPanel{
       public JPanelz(){
          setLayout(new GridLayout(8,8));
-         for(int i = 0; i<8;i++){
-            for (int j = 0; j <8;i++){
-            
+         for(int i = 0; i< 8;i++){
+            for (int j = 0; j < 8;j++){
+               butts[i][j] = new JButtonz();
+               add(butts[i][j]);
             }//end j for loop
          }//end i for loop
-           // add(new JButtonz());
      }//end JPanelz Constructor
    }//end JPanelz
    public static void main(String[]args){
