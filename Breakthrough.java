@@ -3,7 +3,9 @@ import java.awt.*;		// for BorderLayout
 import java.awt.event.*;
 import java.io.*;
 import java.util.*;
-
+/*
+chris is stupid
+*/
 public class Breakthrough extends JFrame{
  static JButton [][] butts = new JButton[8][8];
    public Breakthrough(){
